@@ -1,35 +1,18 @@
-class Animal {
-    constructor(public name: string) { }
+class Counter {
+    count = 0;
 
-    move(distanceInMeters: number = 0) {
-        console.log(`${this.name} moved ${distanceInMeters}m.`);
+    up() {
+        return ++this.count;
     }
 }
 
-class Snake extends Animal {
-    constructor(name: string) {
-        super(name);
-    }
+$(document).ready(() => {
+    const counter = new Counter();
+    const count = $(".clickMe");
 
-    move(distanceInMeters = 5) {
-        console.log('Slithering...');
-        super.move(distanceInMeters);
-    }
-}
-
-class Horse extends Animal {
-    constructor(name: string) {
-        super(name);
-    }
-
-    move(distanceInMeters = 45) {
-        console.log('Galloping...');
-        super.move(distanceInMeters);
-    }
-}
-
-let sam = new Snake('Sammy the Python');
-let tom: Animal = new Horse('Tommy the Palomino');
-
-sam.move();
-tom.move(34);
+    count.click(() => {
+        count.text(counter.up());
+    });
+ const countAppear = $('.countAppear')
+    count.appendTo(countAppear);
+});

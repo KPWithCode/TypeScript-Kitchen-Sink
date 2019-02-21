@@ -9,16 +9,16 @@ console.log(sum);
 // Added if else statment sot that if name stats 
 // with letter after L and alert of Back of the line is displayed
 if (name.charCodeAt(0) >= 77) {
-    alert('Back of the line chump!');
+    // alert('Back of the line chump!');
 } else {
-    alert('Next!');
+    // alert('Next!');
 }
 // sayHello function
 function sayHello(Phone) {
-    alert(Phone);
+    // alert(Phone);
 }
-sayHello('Samsung');
-sayHello('Apple');
+// sayHello('Samsung');
+// sayHello('Apple');
 
 function add(water, juice) {
     (water + juice)
@@ -34,16 +34,16 @@ let names = ['Charles', 'Abby', 'James', 'John'];
 
 function checkAge(name, age) {
     if (age < 21) {
-        alert(`Sorry ${name} you aren't old enough to view this page!`);
+        // alert(`Sorry ${name} you aren't old enough to view this page!`);
     } else {
-        alert('Come on in Budster');
+        // alert('Come on in Budster');
     }
 }
 
-checkAge(names[0], 21);
-checkAge(names[1], 27);
-checkAge(names[2], 18);
-checkAge(names[3], 17);
+// checkAge(names[0], 21);
+// checkAge(names[1], 27);
+// checkAge(names[2], 18);
+// checkAge(names[3], 17);
 
 
 // Array for favorite Vegetables & 
@@ -86,17 +86,17 @@ let ThemePark = [{
 function checkAge(name, age) {
 
     if (age < 21) {
-        alert(`Sorry ${name,age} you STILL aren't old enough to view this page!`);
+        // alert(`Sorry ${name,age} you STILL aren't old enough to view this page!`);
     } else {
-        alert('WELCOME TO BIKINI BOTTOM');
+        // alert('WELCOME TO BIKINI BOTTOM');
     }
 }
 
-checkAge(ThemePark[0], 23);
-checkAge(ThemePark[1], 14);
-checkAge(ThemePark[2], 19);
-checkAge(ThemePark[3], 34);
-checkAge(ThemePark[4], 26);
+// checkAge(ThemePark[0], 23);
+// checkAge(ThemePark[1], 14);
+// checkAge(ThemePark[2], 19);
+// checkAge(ThemePark[3], 34);
+// checkAge(ThemePark[4], 26);
 
 
 // getLength that takes any word as an argument
@@ -111,9 +111,9 @@ getLength("HelloWorld");
 // Find out if it;s odd or even
 let stored = getLength("HelloWorld");   {
     if("HelloWorld" %2 ==0) {
-        alert(`The World Is Nice & Even`);
+        // alert(`The World Is Nice & Even`);
     }   else   {
-        alert(`The World Is An Odd Place`);
+        // alert(`The World Is An Odd Place`);
 
     }
 }
