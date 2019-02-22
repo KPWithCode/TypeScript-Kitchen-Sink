@@ -1,3 +1,4 @@
+"use strict";
 var Counter = /** @class */ (function () {
     function Counter() {
         this.count = 0;
@@ -9,10 +10,10 @@ var Counter = /** @class */ (function () {
 }());
 $(document).ready(function () {
     var counter = new Counter();
-    var count = $(".clickMe");
-    count.click(function () {
-        count.text(counter.up());
+    var countMe = $(".clickMe");
+    countMe.click(function () {
+        countAppear.text(counter.up());
     });
     var countAppear = $('.countAppear');
-    count.appendTo(countAppear);
+    countMe.appendTo(countAppear);
 });

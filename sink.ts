@@ -8,11 +8,11 @@ class Counter {
 
 $(document).ready(() => {
     const counter = new Counter();
-    const count = $(".clickMe");
+    const countMe = $(".clickMe");
 
-    count.click(() => {
-        count.text(counter.up());
+    countMe.click(() => {
+        countAppear.text(counter.up());
     });
  const countAppear = $('.countAppear')
-    count.appendTo(countAppear);
+    countMe.appendTo(countAppear);
 });
