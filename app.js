@@ -1,5 +1,5 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+
 var name = 'Zed';
 var usstates = '50';
 var sum = 5 + 4;
