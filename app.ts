@@ -1,52 +1,66 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var name = 'Zed';
-var usstates = '50';
+export{}
+let name: any = 'Zed';
+
+const usstates = '50';
+
 var sum = 5 + 4;
 console.log(sum);
+
+
 // Added if else statment sot that if name stats 
 // with letter after L and alert of Back of the line is displayed
 if (name.charCodeAt(0) >= 77) {
     alert('Back of the line chump!');
-}
-else {
+} else {
     alert('Next!');
 }
 // sayHello function
-function sayHello(Phone) {
+function sayHello(Phone: any) {
     alert(Phone);
 }
 sayHello('Samsung');
 sayHello('Apple');
-function add(water, juice) {
-    (water + juice);
-    return name;
+
+function add(water:any, juice:any) {
+    (water + juice)
+    return name
 }
-var myNum = add(21, 19);
+let myNum = add(21, 19);
 console.log(myNum);
+
+
 //checkAge function[]
-var names = ['Charles', 'Abby', 'James', 'John'];
-function checkMyAge(name, age) {
+
+let names = ['Charles', 'Abby', 'James', 'John'];
+
+function checkMyAge(name:any, age:any):void  {
     if (age < 21) {
-        alert("Sorry " + name + " you aren't old enough to view this page!");
-    }
-    else {
+        alert(`Sorry ${name} you aren't old enough to view this page!`);
+    } else {
         alert('Come on in Budster');
     }
 }
+
 checkMyAge(names[0], 21);
 checkMyAge(names[1], 27);
 checkMyAge(names[2], 18);
 checkMyAge(names[3], 17);
+
+
 // Array for favorite Vegetables & 
 // Use a loop to display each of your favorite vegetables 
 // to the developer console.
+
 var favVeggies = ['Carrots', 'Radish', 'Cabbage', 'Lettuce'];
-for (var i = 0; i < favVeggies.length; i++) {
+
+for (let i = 0; i < favVeggies.length; i++) {
     console.log(favVeggies[i]);
+
 }
+
 // Create an array of 5 objects that contain name and age properties.
-var ThemePark = [{
+
+let ThemePark = [{
         name: 'Clyde',
         age: 23
     },
@@ -67,35 +81,42 @@ var ThemePark = [{
         age: 26
     }
 ];
+
 // Use a loop to call the checkAge function for each object in the array, passing the object's name and age as arguments.
-function checkAge(name, age) {
+
+function checkAge(name:any, age:any) {
+
     if (age < 21) {
-        alert("Sorry + " + name + "," + age + " you STILL aren't old enough to view this page!");
-    }
-    else {
+        alert(`Sorry + ${name},${age} you STILL aren't old enough to view this page!`);
+    } else {
         alert('WELCOME TO BIKINI BOTTOM');
     }
 }
+
 checkAge(ThemePark[0], 23);
 checkAge(ThemePark[1], 14);
 checkAge(ThemePark[2], 19);
 checkAge(ThemePark[3], 34);
 checkAge(ThemePark[4], 26);
+
+
 // getLength that takes any word as an argument
-function getLength(greeting) {
-    return (greeting.length);
+function getLength(greeting:any)    {
+   
+    return(greeting.length)
 }
+
 getLength("HelloWorld");
 // Store the returned result of that function in a variable.
 // Check the number in the variable from the previous objective. 
 // Find out if it;s odd or even
-function getGreetLength(words) {
-    if (words.length % 2 == 0) {
-        alert("The World Is Nice & Even");
+function getGreetLength(words: string)   {
+    if(words.length %2 ==0) {
+        alert(`The World Is Nice & Even`);
+    }   else   {
+        alert(`The World Is An Odd Place`);
+
     }
-    else {
-        alert("The World Is An Odd Place");
-    }
-    console.log(words.length);
+  console.log(words.length)
 }
-console.log(getGreetLength('hi mom'));
+console.log(getGreetLength('hi mom'))
