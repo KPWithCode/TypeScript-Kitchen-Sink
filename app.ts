@@ -1,5 +1,4 @@
-export{}
-let name: any = 'Zed';
+let nameA: any = 'Zed';
 
 const usstates = '50';
 
@@ -9,7 +8,7 @@ console.log(sum);
 
 // Added if else statment sot that if name stats 
 // with letter after L and alert of Back of the line is displayed
-if (name.charCodeAt(0) >= 77) {
+if (nameA.charCodeAt(0) >= 77) {
     alert('Back of the line chump!');
 } else {
     alert('Next!');
